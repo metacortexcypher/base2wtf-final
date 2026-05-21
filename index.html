@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="base 2 — Hyderabad's first premium founder house. A shared sanctuary where high-agency builders stay, collaborate, and ship software & hardware products.">
+  <meta name="keywords" content="base 2, founder house, Hyderabad startup, hacker house, co-living co-working, tech incubator, build in public, Hyderabad tech">
+  <meta name="author" content="base 2 Community">
+  
+  <title>base 2 — First Founder's House in Hyderabad</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span>b</span>base 2
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#residents">Residents</a></li>
+          <li><a href="#manifesto">Manifesto</a></li>
+          <li><a href="#associate">Associate</a></li>
+          <li><a href="#partner">Partners</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="#associate" class="btn btn-secondary" style="font-size: 0.75rem; padding: 0.5rem 1.2rem;">Join Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle">HYDERABAD, INDIA</p>
+      <h1 class="hero-title">A house for high-agency builders.</h1>
+      <p class="hero-desc">We live together, build our own products, and accelerate each other's vision. Welcome to base 2.</p>
+      <div class="hero-actions">
+        <a href="#about" class="btn">Explore the House</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Detailed House Section -->
+  <section class="about" id="about">
+    <div class="container about-grid reveal">
+      <div class="about-left">
+        <p class="text-uppercase">THE PHILOSOPHY</p>
+        <h2>What does it mean to be a founder house?</h2>
+      </div>
+      <div class="about-right">
+        <p><strong>base 2 is a physical habitat.</strong> Unlike hacker houses that cram thirty people into tiny dorms, base 2 is a meticulously designed sanctuary in Hyderabad. It is a home engineered for quiet, deep-focus sprints, uninterrupted shipping, and spontaneous midnight design debates.</p>
+        
+        <p>We believe that when brilliant minds reside under one roof, the friction of collaboration drops to zero. We share more than server stacks and API configurations; we share the emotional and psychological journey of taking products from raw concepts to initial scale.</p>
+        
+        <div class="about-quote">
+          "The best things aren't built in isolated office cubicles. They are built during 2:00 AM debugging sessions over lukewarm coffee, sitting next to peers who refuse to let you settle for mediocre."
+        </div>
+
+        <p>At base 2, there are no mandatory schedules, no standardized curriculums, and no artificial demo days. We provide the house, the infrastructure, and the peer group. You bring the high-agency obsession to build something magnificent.</p>
+        
+        <p class="signature-note">see you inside...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Current Residents Section -->
+  <section class="residents" id="residents">
+    <div class="container reveal">
+      <p class="text-uppercase text-center" style="margin-bottom: 1rem;">THE RESIDENTS</p>
+      <h2 class="text-center" style="font-size: 3rem; margin-bottom: 4rem; color: #fff;">Currently Building In the House</h2>
+      
+      <div class="residents-grid">
+        <!-- Left Side: Interactive Details Pane -->
+        <div class="details-container">
+          <div class="details-wrapper" id="details-pane">
+            <p class="details-label">RESIDENT BIOGRAPHY</p>
+            <h3 id="details-title">MEET THE BUILDERS</h3>
+            <span id="details-role" style="display: none;">Role Placeholder</span>
+            <p id="details-bio">
+              We are a tight-knit collective of software engineers, bioinformatics researchers, and system designers. Hover over any card on the right to examine their background, inspect what they are actively shipping, and discover their current intellectual obsessions.
+            </p>
+            <div class="details-meta">
+              <div class="details-meta-item" id="details-building">
+                <strong>Building:</strong> High-conviction software & hardware systems
+              </div>
+              <div class="details-meta-item" id="details-interest">
+                <strong>Focus:</strong> Artificial Intelligence, Applied Cryptography, B2B SaaS, and IoT
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: 6 Avatar cards -->
+        <div class="avatars-container">
+          <!-- Card 1 -->
+          <div class="avatar-card" data-id="1" aria-haspopup="true">
+            <div class="avatar-graphic">AR</div>
+            <div class="avatar-info">
+              <div class="avatar-name">Arjun Rao</div>
+              <div class="avatar-tag">Bioinformatics</div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="avatar-card" data-id="2" aria-haspopup="true">
+            <div class="avatar-graphic">MN</div>
+            <div class="avatar-info">
+              <div class="avatar-name">Meera Nair</div>
+              <div class="avatar-tag">Protocols</div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="avatar-card" data-id="3" aria-haspopup="true">
+            <div class="avatar-graphic">VS</div>
+            <div class="avatar-info">
+              <div class="avatar-name">Vikram Sen</div>
+              <div class="avatar-tag">AI Inference</div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="avatar-card" data-id="4" aria-haspopup="true">
+            <div class="avatar-graphic">AR</div>
+            <div class="avatar-info">
+              <div class="avatar-name">Ananya Reddy</div>
+              <div class="avatar-tag">ML Research</div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="avatar-card" data-id="5" aria-haspopup="true">
+            <div class="avatar-graphic">RK</div>
+            <div class="avatar-info">
+              <div class="avatar-name">Rohan Kapoor</div>
+              <div class="avatar-tag">Productivity</div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="avatar-card" data-id="6" aria-haspopup="true">
+            <div class="avatar-graphic">DS</div>
+            <div class="avatar-info">
+              <div class="avatar-name">Divya Shah</div>
+              <div class="avatar-tag">IoT Systems</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Previous Events Gallery (Polaroid Carousel) -->
+  <section class="events-gallery" id="gallery">
+    <div class="container reveal">
+      <p class="text-uppercase text-center" style="margin-bottom: 1rem;">LIFE AT THE HOUSE</p>
+      <h2 class="text-center" style="font-size: 3rem; margin-bottom: 4rem; color: #fff;">Snapshots from our previous events</h2>
+      
+      <!-- Polaroid Carousel Wrapper -->
+      <div class="carousel-container">
+        <!-- Scroll Track -->
+        <div class="carousel-track" id="event-carousel-track">
+          <!-- Polaroid 1 -->
+          <div class="polaroid-card" style="--rotation: -1.5deg;">
+            <div class="polaroid-image-wrapper">
+              <img src="assets/resident-1.png" alt="Community Salon Dinner" loading="lazy">
+            </div>
+            <div class="polaroid-caption">
+              <span>SALON DINNER #01</span>
+              <span class="polaroid-meta">98.4% SHIPPED</span>
+            </div>
+          </div>
+
+          <!-- Polaroid 2 -->
+          <div class="polaroid-card" style="--rotation: 2deg;">
+            <div class="polaroid-image-wrapper">
+              <img src="assets/resident-2.jpg" alt="Midnight Debugging Session" loading="lazy">
+            </div>
+            <div class="polaroid-caption">
+              <span>MIDNIGHT SHIPPING</span>
+              <span class="polaroid-meta">99.2% CONVICTION</span>
+            </div>
+          </div>
+
+          <!-- Polaroid 3 -->
+          <div class="polaroid-card" style="--rotation: -2deg;">
+            <div class="polaroid-image-wrapper">
+              <img src="assets/resident-3.jpg" alt="Coffee Break Debate" loading="lazy">
+            </div>
+            <div class="polaroid-caption">
+              <span>COFFEE DRIFT</span>
+              <span class="polaroid-meta">97.5% COGNITION</span>
+            </div>
+          </div>
+
+          <!-- Polaroid 4 -->
+          <div class="polaroid-card" style="--rotation: 1.5deg;">
+            <div class="polaroid-image-wrapper">
+              <img src="assets/resident-4.jpg" alt="Systems Jam Session" loading="lazy">
+            </div>
+            <div class="polaroid-caption">
+              <span>SYSTEMS HACK</span>
+              <span class="polaroid-meta">96.1% BUILD</span>
+            </div>
+          </div>
+
+          <!-- Polaroid 5 -->
+          <div class="polaroid-card" style="--rotation: -1deg;">
+            <div class="polaroid-image-wrapper">
+              <img src="assets/resident-5.jpg" alt="Hardware Shield Prototyping" loading="lazy">
+            </div>
+            <div class="polaroid-caption">
+              <span>HARDWARE BUILD</span>
+              <span class="polaroid-meta">95.3% TELEMETRY</span>
+            </div>
+          </div>
+
+          <!-- Polaroid 6 -->
+          <div class="polaroid-card" style="--rotation: 2.5deg;">
+            <div class="polaroid-image-wrapper">
+              <img src="assets/resident-6.jpg" alt="Founder Lounge Debates" loading="lazy">
+            </div>
+            <div class="polaroid-caption">
+              <span>FOUNDER LOUNGE</span>
+              <span class="polaroid-meta">100% AGENCY</span>
+            </div>
+          </div>
+
+          <!-- Polaroid 7 -->
+          <div class="polaroid-card" style="--rotation: -2.2deg;">
+            <div class="polaroid-image-wrapper">
+              <img src="assets/resident-7.jpg" alt="Rooftop Product Review" loading="lazy">
+            </div>
+            <div class="polaroid-caption">
+              <span>ROOFTOP REVIEW</span>
+              <span class="polaroid-meta">98.9% SYNERGY</span>
+            </div>
+          </div>
+
+          <!-- Polaroid 8 -->
+          <div class="polaroid-card" style="--rotation: 1.8deg;">
+            <div class="polaroid-image-wrapper">
+              <img src="assets/resident-8.jpg" alt="Sunday Morning Showcase" loading="lazy">
+            </div>
+            <div class="polaroid-caption">
+              <span>SUNDAY BRUNCH</span>
+              <span class="polaroid-meta">94.2% COLLAB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chevron Navigation Controls -->
+        <div class="carousel-nav">
+          <button class="carousel-nav-btn prev" id="carousel-prev" aria-label="Scroll Left">
+            <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+          </button>
+          <button class="carousel-nav-btn next" id="carousel-next" aria-label="Scroll Right">
+            <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manifesto / Differences Section -->
+  <section class="manifesto" id="manifesto">
+    <div class="container reveal">
+      <div class="section-intro">
+        <p class="text-uppercase">OUR MANIFESTO</p>
+        <h2>What we are & what we are not</h2>
+      </div>
+
+      <div class="manifesto-grid">
+        <!-- What We Are -->
+        <div class="manifesto-col">
+          <div class="col-header">
+            <h3><span></span>What We Are</h3>
+          </div>
+          <ul class="manifesto-list">
+            <li class="manifesto-item">
+              <h4>A High-Conviction Sanctuary</h4>
+              <p>We are a highly selective, dedicated space for builders who want to avoid the noise and build products of enduring value.</p>
+            </li>
+            <li class="manifesto-item">
+              <h4>Peer-to-Peer Acceleration</h4>
+              <p>A culture where debugging occurs naturally at any hour, sitting next to individuals who match your agency and work ethic.</p>
+            </li>
+            <li class="manifesto-item">
+              <h4>A Lifelong Community</h4>
+              <p>An elite, tight-knit pedigree of engineering talent in Hyderabad that endures far past typical cohort timelines.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- What We Are Not -->
+        <div class="manifesto-col are-not">
+          <div class="col-header">
+            <h3><span></span>What We Are Not</h3>
+          </div>
+          <ul class="manifesto-list">
+            <li class="manifesto-item">
+              <h4>No Cohorts or Deadlines</h4>
+              <p>We reject rigid start dates, corporate curriculum, and demo-day milestones. Good products require focus, not artificial timelines.</p>
+            </li>
+            <li class="manifesto-item">
+              <h4>No Bunk-Bed Hacker Houses</h4>
+              <p>We do not pack 30 people into dormitory rooms. We value privacy, comfortable quarters, quiet hours, and mental bandwidth.</p>
+            </li>
+            <li class="manifesto-item">
+              <h4>No Closed-Door Isolation</h4>
+              <p>You don't need to reside in the house to be a resident. External founders interact with us through multiple community paths.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Association Section: How to Associate -->
+  <section class="association" id="associate">
+    <div class="container reveal">
+      <p class="text-uppercase text-center" style="margin-bottom: 1rem;">CHANNELS OF ASSOCIATION</p>
+      <h2 class="text-center" style="font-size: 3rem; margin-bottom: 4rem; color: #fff;">How to Engage with base 2</h2>
+      
+      <div class="association-grid">
+        <!-- Event -->
+        <div class="association-card">
+          <div class="assoc-header">
+            <div class="assoc-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z"/>
+              </svg>
+            </div>
+            <h3>Attend an Event</h3>
+            <p>Join our curated, off-the-record salon dinners, technical workshops, and weekly product review sessions.</p>
+          </div>
+          <a href="#" class="assoc-action">
+            Apply to Attend
+            <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+          </a>
+        </div>
+
+        <!-- Space -->
+        <div class="association-card">
+          <div class="assoc-header">
+            <div class="assoc-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 18h16V6H4v12zm9-10h5v3h-5V8zm-7 0h5v5H6V8zm0 7h12v1H6v-1z"/>
+              </svg>
+            </div>
+            <h3>Co-Working Sessions</h3>
+            <p>Engage with residents in person at our dedicated hot desks or join our persistent 24/7 digital virtual workspace.</p>
+          </div>
+          <a href="#" class="assoc-action">
+            Request Desk Access
+            <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+          </a>
+        </div>
+
+        <!-- Brainstorm -->
+        <div class="association-card">
+          <div class="assoc-header">
+            <div class="assoc-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/>
+              </svg>
+            </div>
+            <h3>Seek Technical Help</h3>
+            <p>Facing a complex system architecture issue or database bottleneck? Schedule an audit session with the house.</p>
+          </div>
+          <a href="#" class="assoc-action">
+            Book a Jam Session
+            <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+          </a>
+        </div>
+
+        <!-- Digital community -->
+        <div class="association-card">
+          <div class="assoc-header">
+            <div class="assoc-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+              </svg>
+            </div>
+            <h3>Join the digital Tribe</h3>
+            <p>Gain access to our high-signal virtual channels for engineering discussions, beta testing, and shared insights.</p>
+          </div>
+          <a href="https://discord.gg/RUHRDaqD" class="assoc-action" target="_blank" rel="noopener">
+            Enter the Discord
+            <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners & Allies Section -->
+  <section class="collaborate" id="partner">
+    <div class="container collab-grid reveal">
+      <div class="collab-left">
+        <p class="text-uppercase">ALLIES & SPONSORS</p>
+        <h2>Support the builders at base 2</h2>
+        <p>We work closely with selected brands, venture capitalists, and industry mentors to empower our residents and scale their products.</p>
+        <a href="#associate" class="btn">Get in touch</a>
+      </div>
+      <div class="collab-right">
+        <!-- VCs -->
+        <div class="collab-card">
+          <h3>Capital Partners</h3>
+          <p>Gain early, high-conviction deal-flow. Partner with base 2 to support founders with capital, resources, and follow-on funding pathways.</p>
+          <span class="collab-action">Get in touch &rarr;</span>
+        </div>
+        <!-- Brands -->
+        <div class="collab-card">
+          <h3>Brand Alliances</h3>
+          <p>Equip the house with modern server infrastructure, high-end computational credits, designer work setups, or wellness amenities.</p>
+          <span class="collab-action">Partner with us &rarr;</span>
+        </div>
+        <!-- Mentors -->
+        <div class="collab-card">
+          <h3>Technical Mentors</h3>
+          <p>Deliver targeted technical masterclasses or run office hours. Collaborate with residents on systems engineering, product design, and scaling.</p>
+          <span class="collab-action">Join as Mentor &rarr;</span>
+        </div>
+        <!-- Ecosystems -->
+        <div class="collab-card">
+          <h3>Ecosystem Support</h3>
+          <p>Associate with our broader community by sponsoring open-source hackathons, local technical jams, and physical builder dinners.</p>
+          <span class="collab-action">Sponsor community &rarr;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <a href="#" class="logo"><span>b</span>base 2</a>
+          <p>HYDERABAD'S FIRST FOUNDER RESIDENCE</p>
+        </div>
+        <div class="social-links">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/base2hq/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </a>
+          <!-- LinkedIn (Coordinator Prithvi) -->
+          <a href="https://www.linkedin.com/in/prithvi-chigurupati/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <!-- Discord -->
+          <a href="https://discord.gg/RUHRDaqD" class="social-link" aria-label="Discord" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24">
+              <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028 14.09 14.09 0 001.226-1.994.076.076 0 00-.041-.106 13.107 13.107 0 01-1.873-.894.077.077 0 01-.008-.128c.126-.093.252-.19.372-.287a.075.075 0 01.077-.011c3.92 1.793 8.18 1.793 12.061 0a.073.073 0 01.078.009c.12.099.246.195.373.289a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.894.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.156-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.156 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.156-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.156 2.418z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 base 2. Crafted for the Hyderabad founder lineage. Contact: <a href="mailto:hi@base.wtf" style="color: var(--text-secondary); text-decoration: underline;">hi@base.wtf</a></p>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#residents">Residents</a>
+          <a href="#manifesto">Manifesto</a>
+          <a href="#associate">Engage</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modern Glassmorphic Dialog Modal Form -->
+  <dialog id="contact-dialog" class="contact-modal">
+    <div class="modal-wrapper">
+      <!-- Close Button -->
+      <button class="btn-close-modal" id="close-dialog-btn" aria-label="Close Modal">&times;</button>
+      
+      <!-- Initial State: Form -->
+      <div class="modal-content" id="form-initial-state">
+        <div class="modal-header">
+          <h2>Connect with base 2</h2>
+          <p>Tell us who you are, what you are building, or how you'd like to collaborate. Let's make it high-conviction.</p>
+        </div>
+        
+        <form class="modal-form" id="contact-form" novalidate autocomplete="off">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-purpose">Engagement Channel</label>
+              <select id="contact-purpose" required>
+                <option value="join-house">Apply to Stay as Resident</option>
+                <option value="attend-event">Apply to Attend an Event</option>
+                <option value="desk-access">Request Co-Working Desk Access</option>
+                <option value="jam-session">Book a Technical Jam Session</option>
+                <option value="partner-ally">Partner / Sponsor / Ally (VCs, Brands, Mentors)</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" placeholder="john@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-social">Social Profile (LinkedIn, GitHub or Twitter)</label>
+              <input type="url" id="contact-social" placeholder="https://linkedin.com/in/username">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-details">How can we accelerate your vision? Describe your project & intent.</label>
+              <textarea id="contact-details" rows="5" placeholder="I am shipping a local-first DB compiler... or I represent a seed fund looking to sponsor a builder salon dinner..." required></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-submit">Submit Application</button>
+        </form>
+      </div>
+
+      <!-- Success State: Rich dynamic feedback -->
+      <div class="modal-content success-content" id="form-success-state" style="display: none;">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+          </svg>
+        </div>
+        <h2>Application Received</h2>
+        <p>Thank you for submitting your application to base 2 Hyderabad. We review all applications within 24 hours.</p>
+        
+        <div class="success-actions">
+          <a href="#" id="success-mail-btn" class="btn">Send Direct Email Draft</a>
+          <p class="direct-mail-note">If your request is urgent, please click the button above to launch your email client pre-drafted to <a href="mailto:hi@base.wtf">hi@base.wtf</a>.</p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Script Import -->
+  <script src="app.js"></script>
+</body>
+</html>
