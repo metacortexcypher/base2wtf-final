@@ -50,24 +50,12 @@
   </section>
 
   <!-- About / Detailed House Section -->
-  <section class="about" id="about">
-    <div class="container about-grid reveal">
-      <div class="about-left">
-        <p class="text-uppercase">THE PHILOSOPHY</p>
-        <h2>What does it mean to be a founder house?</h2>
-      </div>
-      <div class="about-right">
-        <p><strong>base 2 is a physical habitat.</strong> Unlike hacker houses that cram thirty people into tiny dorms, base 2 is a meticulously designed sanctuary in Hyderabad. It is a home engineered for quiet, deep-focus sprints, uninterrupted shipping, and spontaneous midnight design debates.</p>
-        
-        <p>We believe that when brilliant minds reside under one roof, the friction of collaboration drops to zero. We share more than server stacks and API configurations; we share the emotional and psychological journey of taking products from raw concepts to initial scale.</p>
-        
-        <div class="about-quote">
-          "The best things aren't built in isolated office cubicles. They are built during 2:00 AM debugging sessions over lukewarm coffee, sitting next to peers who refuse to let you settle for mediocre."
-        </div>
-
-        <p>At base 2, there are no mandatory schedules, no standardized curriculums, and no artificial demo days. We provide the house, the infrastructure, and the peer group. You bring the high-agency obsession to build something magnificent.</p>
-        
-        <p class="signature-note">see you inside...</p>
+  <section class="about scroll-section" id="about">
+    <div class="container about-sticky">
+      <div class="scroll-text-container">
+        <p>base 2 is a physical habitat. Unlike hacker houses that cram thirty people into tiny dorms, it is a meticulously designed sanctuary in Hyderabad.</p>
+        <p>It is a home engineered for quiet, deep-focus sprints, uninterrupted shipping, and spontaneous midnight design debates. We share the emotional and psychological journey of taking products from raw concepts to initial scale.</p>
+        <p>There are no mandatory schedules or demo days. We provide the infrastructure and the peer group. You bring the high-agency obsession to build something magnificent.</p>
       </div>
     </div>
   </section>
@@ -78,77 +66,155 @@
       <p class="text-uppercase text-center" style="margin-bottom: 1rem;">THE RESIDENTS</p>
       <h2 class="text-center" style="font-size: 3rem; margin-bottom: 4rem; color: #fff;">Currently Building In the House</h2>
       
-      <div class="residents-grid">
-        <!-- Left Side: Interactive Details Pane -->
-        <div class="details-container">
-          <div class="details-wrapper" id="details-pane">
-            <p class="details-label">RESIDENT BIOGRAPHY</p>
-            <h3 id="details-title">MEET THE BUILDERS</h3>
-            <span id="details-role" style="display: none;">Role Placeholder</span>
-            <p id="details-bio">
-              We are a tight-knit collective of software engineers, bioinformatics researchers, and system designers. Hover over any card on the right to examine their background, inspect what they are actively shipping, and discover their current intellectual obsessions.
-            </p>
-            <div class="details-meta">
-              <div class="details-meta-item" id="details-building">
-                <strong>Building:</strong> High-conviction software & hardware systems
-              </div>
-              <div class="details-meta-item" id="details-interest">
-                <strong>Focus:</strong> Artificial Intelligence, Applied Cryptography, B2B SaaS, and IoT
-              </div>
+      <div class="builders-grid">
+        <!-- Card 1 -->
+        <div class="builder-card">
+          <img src="/builders/builder_1.png" alt="Arjun Rao" class="builder-image" />
+          <div class="builder-base-info">
+            <h3 class="builder-name">Arjun Rao</h3>
+            <span class="builder-role">Bioinformatics</span>
+          </div>
+          <div class="builder-overlay">
+            <p class="builder-bio">Ex-IISc. Built high-throughput sequence alignment pipelines. Researching chromatin structure dynamics.</p>
+            <div class="builder-meta">
+              <div class="builder-meta-item"><strong>Building:</strong> ChromaScope</div>
+              <div class="builder-meta-item"><strong>Focus:</strong> Computational genomics</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="builder-card">
+          <img src="/builders/builder_2.png" alt="Meera Nair" class="builder-image" />
+          <div class="builder-base-info">
+            <h3 class="builder-name">Meera Nair</h3>
+            <span class="builder-role">Protocol Engineering</span>
+          </div>
+          <div class="builder-overlay">
+            <p class="builder-bio">Core contributor to L2 privacy protocol. Designed zero-knowledge state transition systems.</p>
+            <div class="builder-meta">
+              <div class="builder-meta-item"><strong>Building:</strong> ZKP-Relay</div>
+              <div class="builder-meta-item"><strong>Focus:</strong> Cryptography</div>
             </div>
           </div>
         </div>
 
-        <!-- Right Side: 6 Avatar cards -->
-        <div class="avatars-container">
-          <!-- Card 1 -->
-          <div class="avatar-card" data-id="1" aria-haspopup="true">
-            <div class="avatar-graphic">AR</div>
-            <div class="avatar-info">
-              <div class="avatar-name">Arjun Rao</div>
-              <div class="avatar-tag">Bioinformatics</div>
+        <!-- Card 3 -->
+        <div class="builder-card">
+          <img src="/builders/builder_3.png" alt="Vikram Sen" class="builder-image" />
+          <div class="builder-base-info">
+            <h3 class="builder-name">Vikram Sen</h3>
+            <span class="builder-role">AI Pipelines</span>
+          </div>
+          <div class="builder-overlay">
+            <p class="builder-bio">Previously scaled local LLM deployments at deep tech startup. Focused on model quantization.</p>
+            <div class="builder-meta">
+              <div class="builder-meta-item"><strong>Building:</strong> FastQuant</div>
+              <div class="builder-meta-item"><strong>Focus:</strong> Neural architectures</div>
             </div>
           </div>
-          <!-- Card 2 -->
-          <div class="avatar-card" data-id="2" aria-haspopup="true">
-            <div class="avatar-graphic">MN</div>
-            <div class="avatar-info">
-              <div class="avatar-name">Meera Nair</div>
-              <div class="avatar-tag">Protocols</div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="builder-card">
+          <img src="/builders/builder_4.png" alt="Ananya Reddy" class="builder-image" />
+          <div class="builder-base-info">
+            <h3 class="builder-name">Ananya Reddy</h3>
+            <span class="builder-role">Applied ML</span>
+          </div>
+          <div class="builder-overlay">
+            <p class="builder-bio">Ex-Google Brain. Focused on multimodal representation learning and self-supervised architectures.</p>
+            <div class="builder-meta">
+              <div class="builder-meta-item"><strong>Building:</strong> VibeLink</div>
+              <div class="builder-meta-item"><strong>Focus:</strong> Multimodal fusion</div>
             </div>
           </div>
-          <!-- Card 3 -->
-          <div class="avatar-card" data-id="3" aria-haspopup="true">
-            <div class="avatar-graphic">VS</div>
-            <div class="avatar-info">
-              <div class="avatar-name">Vikram Sen</div>
-              <div class="avatar-tag">AI Inference</div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="builder-card">
+          <img src="/builders/builder_5.png" alt="Rohan Kapoor" class="builder-image" />
+          <div class="builder-base-info">
+            <h3 class="builder-name">Rohan Kapoor</h3>
+            <span class="builder-role">Dev Tools</span>
+          </div>
+          <div class="builder-overlay">
+            <p class="builder-bio">Built developer tools used by 50k+ engineers. Active open-source contributor and core maintainer.</p>
+            <div class="builder-meta">
+              <div class="builder-meta-item"><strong>Building:</strong> DevSync</div>
+              <div class="builder-meta-item"><strong>Focus:</strong> Compiler design</div>
             </div>
           </div>
-          <!-- Card 4 -->
-          <div class="avatar-card" data-id="4" aria-haspopup="true">
-            <div class="avatar-graphic">AR</div>
-            <div class="avatar-info">
-              <div class="avatar-name">Ananya Reddy</div>
-              <div class="avatar-tag">ML Research</div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="builder-card">
+          <img src="/builders/builder_6.png" alt="Divya Shah" class="builder-image" />
+          <div class="builder-base-info">
+            <h3 class="builder-name">Divya Shah</h3>
+            <span class="builder-role">IoT Systems</span>
+          </div>
+          <div class="builder-overlay">
+            <p class="builder-bio">Designed telemetry hardware for formula racing team. PCB designer and bare-metal wizard.</p>
+            <div class="builder-meta">
+              <div class="builder-meta-item"><strong>Building:</strong> VeloSense</div>
+              <div class="builder-meta-item"><strong>Focus:</strong> Bare-metal dev</div>
             </div>
           </div>
-          <!-- Card 5 -->
-          <div class="avatar-card" data-id="5" aria-haspopup="true">
-            <div class="avatar-graphic">RK</div>
-            <div class="avatar-info">
-              <div class="avatar-name">Rohan Kapoor</div>
-              <div class="avatar-tag">Productivity</div>
-            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manifesto / Differences Section -->
+  <section class="manifesto" id="manifesto">
+    <div class="container reveal">
+      <div class="section-intro">
+        <p class="text-uppercase">OUR MANIFESTO</p>
+        <h2>What we are & what we are not</h2>
+      </div>
+
+      <div class="manifesto-grid">
+        <!-- What We Are -->
+        <div class="manifesto-col">
+          <div class="col-header">
+            <h3><span></span>What We Are</h3>
           </div>
-          <!-- Card 6 -->
-          <div class="avatar-card" data-id="6" aria-haspopup="true">
-            <div class="avatar-graphic">DS</div>
-            <div class="avatar-info">
-              <div class="avatar-name">Divya Shah</div>
-              <div class="avatar-tag">IoT Systems</div>
-            </div>
+          <ul class="manifesto-list">
+            <li class="manifesto-item">
+              <h4>A High-Conviction Sanctuary</h4>
+              <p>We are a highly selective, dedicated space for builders who want to avoid the noise and build products of enduring value.</p>
+            </li>
+            <li class="manifesto-item">
+              <h4>Peer-to-Peer Acceleration</h4>
+              <p>A culture where debugging occurs naturally at any hour, sitting next to individuals who match your agency and work ethic.</p>
+            </li>
+            <li class="manifesto-item">
+              <h4>A Lifelong Community</h4>
+              <p>An elite, tight-knit pedigree of engineering talent in Hyderabad that endures far past typical cohort timelines.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- What We Are Not -->
+        <div class="manifesto-col are-not">
+          <div class="col-header">
+            <h3><span></span>What We Are Not</h3>
           </div>
+          <ul class="manifesto-list">
+            <li class="manifesto-item">
+              <h4>No Cohorts or Deadlines</h4>
+              <p>We reject rigid start dates, corporate curriculum, and demo-day milestones. Good products require focus, not artificial timelines.</p>
+            </li>
+            <li class="manifesto-item">
+              <h4>No Bunk-Bed Hacker Houses</h4>
+              <p>We do not pack 30 people into dormitory rooms. We value privacy, comfortable quarters, quiet hours, and mental bandwidth.</p>
+            </li>
+            <li class="manifesto-item">
+              <h4>No Closed-Door Isolation</h4>
+              <p>You don't need to reside in the house to be a resident. External founders interact with us through multiple community paths.</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -266,59 +332,7 @@
     </div>
   </section>
 
-  <!-- Manifesto / Differences Section -->
-  <section class="manifesto" id="manifesto">
-    <div class="container reveal">
-      <div class="section-intro">
-        <p class="text-uppercase">OUR MANIFESTO</p>
-        <h2>What we are & what we are not</h2>
-      </div>
 
-      <div class="manifesto-grid">
-        <!-- What We Are -->
-        <div class="manifesto-col">
-          <div class="col-header">
-            <h3><span></span>What We Are</h3>
-          </div>
-          <ul class="manifesto-list">
-            <li class="manifesto-item">
-              <h4>A High-Conviction Sanctuary</h4>
-              <p>We are a highly selective, dedicated space for builders who want to avoid the noise and build products of enduring value.</p>
-            </li>
-            <li class="manifesto-item">
-              <h4>Peer-to-Peer Acceleration</h4>
-              <p>A culture where debugging occurs naturally at any hour, sitting next to individuals who match your agency and work ethic.</p>
-            </li>
-            <li class="manifesto-item">
-              <h4>A Lifelong Community</h4>
-              <p>An elite, tight-knit pedigree of engineering talent in Hyderabad that endures far past typical cohort timelines.</p>
-            </li>
-          </ul>
-        </div>
-
-        <!-- What We Are Not -->
-        <div class="manifesto-col are-not">
-          <div class="col-header">
-            <h3><span></span>What We Are Not</h3>
-          </div>
-          <ul class="manifesto-list">
-            <li class="manifesto-item">
-              <h4>No Cohorts or Deadlines</h4>
-              <p>We reject rigid start dates, corporate curriculum, and demo-day milestones. Good products require focus, not artificial timelines.</p>
-            </li>
-            <li class="manifesto-item">
-              <h4>No Bunk-Bed Hacker Houses</h4>
-              <p>We do not pack 30 people into dormitory rooms. We value privacy, comfortable quarters, quiet hours, and mental bandwidth.</p>
-            </li>
-            <li class="manifesto-item">
-              <h4>No Closed-Door Isolation</h4>
-              <p>You don't need to reside in the house to be a resident. External founders interact with us through multiple community paths.</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Association Section: How to Associate -->
   <section class="association" id="associate">
@@ -326,111 +340,120 @@
       <p class="text-uppercase text-center" style="margin-bottom: 1rem;">CHANNELS OF ASSOCIATION</p>
       <h2 class="text-center" style="font-size: 3rem; margin-bottom: 4rem; color: #fff;">How to Engage with base 2</h2>
       
-      <div class="association-grid">
-        <!-- Event -->
-        <div class="association-card">
-          <div class="assoc-header">
-            <div class="assoc-icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z"/>
-              </svg>
-            </div>
-            <h3>Attend an Event</h3>
+      <div class="access-pass-grid">
+        <!-- Event Pass -->
+        <a href="#" class="access-pass">
+          <div class="pass-header">
+            <span class="pass-id">PASS // 01</span>
+            <svg viewBox="0 0 24 24" class="pass-icon"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z"/></svg>
+          </div>
+          <div class="pass-body">
+            <h3>ATTEND AN EVENT</h3>
             <p>Join our curated, off-the-record salon dinners, technical workshops, and weekly product review sessions.</p>
           </div>
-          <a href="#" class="assoc-action">
-            Apply to Attend
-            <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-          </a>
-        </div>
+          <div class="pass-footer">
+            <div class="barcode">|||| | || || | ||| | || |||| |</div>
+            <span class="pass-action">APPLY TO ATTEND &rarr;</span>
+          </div>
+        </a>
 
-        <!-- Space -->
-        <div class="association-card">
-          <div class="assoc-header">
-            <div class="assoc-icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M4 18h16V6H4v12zm9-10h5v3h-5V8zm-7 0h5v5H6V8zm0 7h12v1H6v-1z"/>
-              </svg>
-            </div>
-            <h3>Co-Working Sessions</h3>
+        <!-- Space Pass -->
+        <a href="#" class="access-pass">
+          <div class="pass-header">
+            <span class="pass-id">PASS // 02</span>
+            <svg viewBox="0 0 24 24" class="pass-icon"><path d="M4 18h16V6H4v12zm9-10h5v3h-5V8zm-7 0h5v5H6V8zm0 7h12v1H6v-1z"/></svg>
+          </div>
+          <div class="pass-body">
+            <h3>CO-WORKING</h3>
             <p>Engage with residents in person at our dedicated hot desks or join our persistent 24/7 digital virtual workspace.</p>
           </div>
-          <a href="#" class="assoc-action">
-            Request Desk Access
-            <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-          </a>
-        </div>
+          <div class="pass-footer">
+            <div class="barcode">|| | ||| | || ||| | || ||| | |</div>
+            <span class="pass-action">REQUEST ACCESS &rarr;</span>
+          </div>
+        </a>
 
-        <!-- Brainstorm -->
-        <div class="association-card">
-          <div class="assoc-header">
-            <div class="assoc-icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/>
-              </svg>
-            </div>
-            <h3>Seek Technical Help</h3>
+        <!-- Brainstorm Pass -->
+        <a href="#" class="access-pass">
+          <div class="pass-header">
+            <span class="pass-id">PASS // 03</span>
+            <svg viewBox="0 0 24 24" class="pass-icon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+          </div>
+          <div class="pass-body">
+            <h3>TECH HELP</h3>
             <p>Facing a complex system architecture issue or database bottleneck? Schedule an audit session with the house.</p>
           </div>
-          <a href="#" class="assoc-action">
-            Book a Jam Session
-            <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-          </a>
-        </div>
+          <div class="pass-footer">
+            <div class="barcode">||| || | || | |||| || | || |||</div>
+            <span class="pass-action">BOOK A JAM &rarr;</span>
+          </div>
+        </a>
 
-        <!-- Digital community -->
-        <div class="association-card">
-          <div class="assoc-header">
-            <div class="assoc-icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
-              </svg>
-            </div>
-            <h3>Join the digital Tribe</h3>
+        <!-- Digital community Pass -->
+        <a href="https://discord.gg/RUHRDaqD" class="access-pass" target="_blank" rel="noopener">
+          <div class="pass-header">
+            <span class="pass-id">PASS // 04</span>
+            <svg viewBox="0 0 24 24" class="pass-icon"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+          </div>
+          <div class="pass-body">
+            <h3>DIGITAL TRIBE</h3>
             <p>Gain access to our high-signal virtual channels for engineering discussions, beta testing, and shared insights.</p>
           </div>
-          <a href="https://discord.gg/RUHRDaqD" class="assoc-action" target="_blank" rel="noopener">
-            Enter the Discord
-            <svg viewBox="0 0 24 24"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-          </a>
-        </div>
+          <div class="pass-footer">
+            <div class="barcode">|| ||| || | || ||| | ||| || ||</div>
+            <span class="pass-action">ENTER DISCORD &rarr;</span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Partners & Allies Section -->
   <section class="collaborate" id="partner">
-    <div class="container collab-grid reveal">
-      <div class="collab-left">
-        <p class="text-uppercase">ALLIES & SPONSORS</p>
-        <h2>Support the builders at base 2</h2>
-        <p>We work closely with selected brands, venture capitalists, and industry mentors to empower our residents and scale their products.</p>
-        <a href="#associate" class="btn">Get in touch</a>
-      </div>
-      <div class="collab-right">
-        <!-- VCs -->
-        <div class="collab-card">
-          <h3>Capital Partners</h3>
-          <p>Gain early, high-conviction deal-flow. Partner with base 2 to support founders with capital, resources, and follow-on funding pathways.</p>
-          <span class="collab-action">Get in touch &rarr;</span>
+    <div class="container reveal">
+      <p class="text-uppercase text-center" style="margin-bottom: 1rem;">ALLIES & SPONSORS</p>
+      <h2 class="text-center" style="font-size: 3rem; margin-bottom: 4rem; color: #fff;">Support the builders at base 2</h2>
+      
+      <div class="accordion-container">
+        <!-- Accordion 1 -->
+        <div class="accordion-item">
+          <div class="accordion-title">CAPITAL</div>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <p>Gain early, high-conviction deal-flow. Partner with base 2 to support founders with capital, resources, and follow-on funding pathways.</p>
+              <a href="#associate" class="accordion-btn">Get in touch &rarr;</a>
+            </div>
+          </div>
         </div>
-        <!-- Brands -->
-        <div class="collab-card">
-          <h3>Brand Alliances</h3>
-          <p>Equip the house with modern server infrastructure, high-end computational credits, designer work setups, or wellness amenities.</p>
-          <span class="collab-action">Partner with us &rarr;</span>
+        <!-- Accordion 2 -->
+        <div class="accordion-item">
+          <div class="accordion-title">BRANDS</div>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <p>Equip the house with modern server infrastructure, high-end computational credits, designer work setups, or wellness amenities.</p>
+              <a href="#associate" class="accordion-btn">Partner with us &rarr;</a>
+            </div>
+          </div>
         </div>
-        <!-- Mentors -->
-        <div class="collab-card">
-          <h3>Technical Mentors</h3>
-          <p>Deliver targeted technical masterclasses or run office hours. Collaborate with residents on systems engineering, product design, and scaling.</p>
-          <span class="collab-action">Join as Mentor &rarr;</span>
+        <!-- Accordion 3 -->
+        <div class="accordion-item">
+          <div class="accordion-title">MENTORS</div>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <p>Deliver targeted technical masterclasses or run office hours. Collaborate with residents on systems engineering, product design, and scaling.</p>
+              <a href="#associate" class="accordion-btn">Join as Mentor &rarr;</a>
+            </div>
+          </div>
         </div>
-        <!-- Ecosystems -->
-        <div class="collab-card">
-          <h3>Ecosystem Support</h3>
-          <p>Associate with our broader community by sponsoring open-source hackathons, local technical jams, and physical builder dinners.</p>
-          <span class="collab-action">Sponsor community &rarr;</span>
+        <!-- Accordion 4 -->
+        <div class="accordion-item">
+          <div class="accordion-title">ECOSYSTEM</div>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <p>Associate with our broader community by sponsoring open-source hackathons, local technical jams, and physical builder dinners.</p>
+              <a href="#associate" class="accordion-btn">Sponsor community &rarr;</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

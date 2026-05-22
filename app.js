@@ -1,157 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Authentic Founders dataset from base2v1
-  const founders = [
-    {
-      id: "1",
-      name: "Arjun Rao",
-      role: "Bioinformatics & Genetics",
-      bio: "Ex-IISc. Built high-throughput sequence alignment pipelines. Researching chromatin structure dynamics.",
-      building: "ChromaScope — an open-source tool visualising 3D genomic architectures for cancer research.",
-      interest: "Computational genomics, chromatin folding, rust-lang."
-    },
-    {
-      id: "2",
-      name: "Meera Nair",
-      role: "Protocol Engineering",
-      bio: "Core contributor to L2 privacy protocol. Designed zero-knowledge state transition systems.",
-      building: "ZKP-Relay — an optimized relayer bridge lowering verification gas fees by 40%.",
-      interest: "ZKP scaling, cryptography, distributed networks."
-    },
-    {
-      id: "3",
-      name: "Vikram Sen",
-      role: "AI Inference Pipelines",
-      bio: "Previously scaled local LLM deployments at deep tech startup. Focused on model quantization.",
-      building: "FastQuant — highly optimized edge runtime for floating-point 4-bit precision models.",
-      interest: "Quantization, systems-programming, neural architectures."
-    },
-    {
-      id: "4",
-      name: "Ananya Reddy",
-      role: "Applied ML Research",
-      bio: "Ex-Google Brain. Focused on multimodal representation learning and self-supervised architectures.",
-      building: "VibeLink — cross-modal semantic search engines for medical diagnostics.",
-      interest: "Contrastive learning, multimodal fusion, interpretability."
-    },
-    {
-      id: "5",
-      name: "Rohan Kapoor",
-      role: "Developer Productivity",
-      bio: "Built developer tools used by 50k+ engineers. Active open-source contributor and core maintainer.",
-      building: "DevSync — ultra-fast hot reloading compiler and bundler for monorepos.",
-      interest: "Compiler design, dev experience, rust tools."
-    },
-    {
-      id: "6",
-      name: "Divya Shah",
-      role: "IoT & Hardware Systems",
-      bio: "Designed telemetry hardware for formula racing team. PCB designer and bare-metal wizard.",
-      building: "VeloSense — low-latency micro-controllers for edge telemetry sync.",
-      interest: "RTOS systems, bare-metal development, high-frequency IoT."
-    },
-    {
-      id: "7",
-      name: "Pranav K",
-      role: "B2B Product Engineering",
-      bio: "Former principal architect at series-B startup. Scaled infrastructure from zero to 10M MAU.",
-      building: "LedgerFlow — real-time ledger accounting API for multi-tenant billing.",
-      interest: "Database isolation, distributed consensus, SaaS infra."
-    },
-    {
-      id: "8",
-      name: "Sanjana Rao",
-      role: "Applied Cryptography",
-      bio: "PhD researcher in lattice-based cryptography. Consulting for high-assurance security systems.",
-      building: "LatticeSDK — post-quantum signature schemes for embedded systems.",
-      interest: "Post-quantum crypt, embedded security, rust."
-    }
-  ];
-
-  // DOM Elements - Residents grid
-  const avatarCards = document.querySelectorAll('.avatar-card');
-  const detailsTitle = document.getElementById('details-title');
-  const detailsRole = document.getElementById('details-role');
-  const detailsBio = document.getElementById('details-bio');
-  const detailsBuilding = document.getElementById('details-building');
-  const detailsInterest = document.getElementById('details-interest');
-  const detailsPane = document.getElementById('details-pane');
-  const residentsGrid = document.querySelector('.residents-grid');
-
-  // Default values for resident pane
-  const defaultTitle = "MEET THE BUILDERS";
-  const defaultBio = "We are a tight-knit collective of software engineers, bioinformatics researchers, and system designers. Hover over any card on the right to examine their background, inspect what they are actively shipping, and discover their current intellectual obsessions.";
-  const defaultBuilding = "<strong>Building:</strong> High-conviction software & hardware systems";
-  const defaultInterest = "<strong>Focus:</strong> Artificial Intelligence, Applied Cryptography, B2B SaaS, and IoT";
-
-  // Track hover state for smooth transitions
-  let hoverTimeout;
-
-  avatarCards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-      clearTimeout(hoverTimeout);
-      const id = card.getAttribute('data-id');
-      const founder = founders.find(f => f.id === id);
-
-      if (founder) {
-        // 1. Fade out other avatars
-        avatarCards.forEach(c => {
-          if (c !== card) {
-            c.classList.add('faded');
-            c.classList.remove('active');
-          } else {
-            c.classList.add('active');
-            c.classList.remove('faded');
-          }
-        });
-
-        residentsGrid.classList.add('has-active');
-
-        // 2. Animate details pane swap
-        detailsPane.classList.add('fade-out');
-
-        setTimeout(() => {
-          // Update details content
-          detailsTitle.textContent = founder.name;
-          if (detailsRole) {
-            detailsRole.textContent = founder.role;
-            detailsRole.style.display = 'inline-block';
-          }
-          detailsBio.textContent = founder.bio;
-          detailsBuilding.innerHTML = `<strong>Building:</strong> ${founder.building}`;
-          detailsInterest.innerHTML = `<strong>Interest:</strong> ${founder.interest}`;
-
-          // Fade details back in
-          detailsPane.classList.remove('fade-out');
-        }, 180); // matches CSS transition duration
-      }
+  // Auto-scroll loop for events gallery
+  const track = document.getElementById('event-carousel-track');
+  if (track) {
+    const cards = Array.from(track.children);
+    cards.forEach(card => {
+      const clone = card.cloneNode(true);
+      track.appendChild(clone);
     });
-
-    card.addEventListener('mouseleave', () => {
-      // 1. Restore all avatars
-      avatarCards.forEach(c => {
-        c.classList.remove('faded');
-        c.classList.remove('active');
-      });
-
-      residentsGrid.classList.remove('has-active');
-
-      // 2. Animate details pane back to default
-      detailsPane.classList.add('fade-out');
-
-      hoverTimeout = setTimeout(() => {
-        // Restore default text
-        detailsTitle.textContent = defaultTitle;
-        if (detailsRole) {
-          detailsRole.style.display = 'none';
-        }
-        detailsBio.textContent = defaultBio;
-        detailsBuilding.innerHTML = defaultBuilding;
-        detailsInterest.innerHTML = defaultInterest;
-
-        detailsPane.classList.remove('fade-out');
-      }, 180);
-    });
-  });
+  }
 
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -178,20 +34,65 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // --- Header Scrolled State ---
+  const header = document.querySelector('header');
+  
+  // --- Scroll Highlight Effect for Sticky About Section ---
+  const aboutTextElements = document.querySelectorAll('.scroll-text-container p');
+  aboutTextElements.forEach(el => {
+    const words = el.innerText.split(' ');
+    el.innerHTML = '';
+    words.forEach(word => {
+      if (word.trim() === '') return;
+      const span = document.createElement('span');
+      span.className = 'scroll-word';
+      span.innerText = word + ' ';
+      el.appendChild(span);
+    });
+  });
+  const scrollWords = document.querySelectorAll('.scroll-word');
+  const scrollSection = document.querySelector('.scroll-section');
+
   // Reveal elements on scroll
   const revealElements = document.querySelectorAll('.reveal');
-  const revealOnScroll = () => {
+  const handleScrollEvents = () => {
+    // Header glassmorphism
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+
+    const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+
+    // Fade in sections
     revealElements.forEach(el => {
       const rect = el.getBoundingClientRect();
-      const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
       if (rect.top <= viewHeight * 0.85) {
         el.classList.add('active');
       }
     });
+
+    // Sticky text scrub highlight
+    if (scrollSection && scrollWords.length > 0) {
+      const rect = scrollSection.getBoundingClientRect();
+      // Progress from 0 to 1 as the section scrolls through the viewport
+      const scrollProgress = -rect.top / (rect.height - viewHeight);
+      const clampedProgress = Math.max(0, Math.min(1, scrollProgress));
+      
+      scrollWords.forEach((word, index) => {
+        const threshold = index / scrollWords.length;
+        if (clampedProgress > threshold) {
+          word.style.opacity = '1';
+        } else {
+          word.style.opacity = '0.15';
+        }
+      });
+    }
   };
 
-  window.addEventListener('scroll', revealOnScroll);
-  revealOnScroll(); // trigger initial run
+  window.addEventListener('scroll', handleScrollEvents);
+  handleScrollEvents(); // trigger initial run
 
   // ==========================================
   // MODERN DIALOG MODAL & FORM LOGIC
